@@ -1,18 +1,94 @@
 <html lang="en">
-    <!--Version 6.0 
-	Name:
-	Date Completed:
+<!--Version 6.0 
+	Name: Levy S.
+	Date Completed: 
     -->
-    <head>
+
+<head>
+
+    
+    <meta charset=utf-8>
+    
+    <title>jQuery Events</title>
+    
+    <link rel= "stylesheet" href = "day.css">
+
+    <style>
+        ul li {
+            color: green;
+        }
+
+        .emphasis {
+            color: green;
+        }
+
+        .emphasis {
+            font-weight: bold;
+        }
+
+    </style>
+
+    <script>
+        $(function() {
+            $('li:first-child').addClass('emphasis');
+
+        });
+
+
+        $(document).ready(function() {
+            $('li:first-child').addClass('emphasis');
+
+        });
+
+    </script>
+
+</head>
+
+<body>
+    
+    <h1>My Website</h1>
+    <button> Day </button>
+    <button> Night </button>
+
+    <ul>
+        <li> Subscribe to T-Series</li>
+        <li> Because it's better</li>
+        <li> The music is actually lit</li>
+    </ul>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+
+    <script src="jquery-3.7.1.js"></script>
+
+    <script>
+        window.jQuery('ul li').addClass('emphasis');
+        $('ul li').addClass('emphasis');
         
-        <title>Web Development User #27</title>
-    
-    </head>
-    
-    <body>
+    (function()    {
         
-        <center>My name is User #27</center>
-    
-    </body>
+        $('button').hover(function() {
+            
+            console.log(this);
+            
+        }); 
+    })();
+        
+        
+    (function(){
+        
+        var link = $('link');
+        $('button').click(function() {}
+        
+        
+    }); 
+        
+        
+
+    </script>
+
+</body>
 
 </html>

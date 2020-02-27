@@ -1,13 +1,13 @@
 function changeTextGood() {
-    document.getElementById("textChange").innerHTML = "Good for you bro";
+    document.getElementById("textChangeTouch").innerHTML = "Good for you bro";
 }
 
 function changeTextFine() {
-    document.getElementById("textChange").innerHTML = "Are you sure buddy?";
+    document.getElementById("textChangeTouch").innerHTML = "Are you sure buddy?";
 }
 
 function changeTextOK() {
-    document.getElementById("textChange").innerHTML = "Buddy Stop it, let's talk right now";
+    document.getElementById("textChangeTouch").innerHTML = "Buddy Stop it, lets talk right now";
 }
 
 function Legend() {
@@ -15,12 +15,27 @@ function Legend() {
 }
 
 function glow(x) {
-  x.style.background = "yellow";
-} 
+    x.style.background = "yellow";
+}
 
 
 function reset() {
-    
+
     alert('This page will reset');
-    
+
+}
+
+function allCAPS() {
+    var x = document.getElementById("fname");
+    x.value = x.value.toUpperCase();
+
+}
+
+
+function touchSiri() {
+    document.getElementById("textChangeTouch").innerHTML = "STOP TOUCHING ME";
+}
+
+function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
 }
