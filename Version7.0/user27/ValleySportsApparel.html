@@ -26,7 +26,9 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">'
+    <link rel="stylesheet" href="ValleySports.css">
+
 
     <!-- Custom styles for this template -->
     <style type="text/css">
@@ -53,9 +55,9 @@
     <!---------------------------------- Begin the nav-bar ------------->
     <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-         <a href="default.asp">
-            <img src="VSimage.png" height="52" width="102" alt = 'ValleySports'>
-                </a>
+            <a href="ValleySportsHome.html">
+                <img src="VSimage.png" height="52" width="102" alt='ValleySports'>
+            </a>
 
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -65,19 +67,41 @@
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
 
-                    <a href="ValleySportsApparel.html" class="nav-item nav-link active" tabindex = "-2" onmouseover="style.color='red'" onmouseout="style.color='white'"> 
-                        | Apparel |</a>
-                    <a href="ValleySportsEquipment.html" class="nav-item nav-link active" tabindex = "-2" onmouseover="style.color='red'" onmouseout="style.color='white'">
-                        | Equipment |</a>
+                    <div class="dropdown">
+                        <a href="ValleySportsApparel.html" class="nav-item nav-link active dropdown-toggle" id='navbardrop' data-toggle='dropdown' tabindex="-1" onmouseover="style.color='red'" onmouseout="style.color='white'">| Apparel |</a>
+                        <div class="dropdown-menu color-black">
+                            <a class="dropdown-item" href='ValleySportsApparel.html'>Men</a>
+                            <a class="dropdown-item" href='ValleySportsApparel.html'>Women</a>
+                            <a class="dropdown-item" href='ValleySportsApparel.html'>Kids</a>
+                        </div>
+                    </div>
 
-                    <a href="ValleySportsSeasonal.html" class="nav-item nav-link active" tabindex="-1" onmouseover="style.color='red'" onmouseout="style.color='white'">| Seasonal |</a>
-                    
+
+                    <div class="dropdown">
+                        <a href="ValleySportsEquipment.html" class="nav-item nav-link active dropdown-toggle" id='navbardrop' data-toggle='dropdown' tabindex="-1" onmouseover="style.color='red'" onmouseout="style.color='white'">| Equipment |</a>
+                        <div class="dropdown-menu color-black">
+                            <a class="dropdown-item" href='ValleySportsEquipment.html'>Football</a>
+                            <a class="dropdown-item" href='ValleySportsEquipment.html'>Soccer</a>
+                            <a class="dropdown-item" href='ValleySportsEquipment.html'>Basketball</a>
+                            <a class="dropdown-item" href='ValleySportsEquipment.html'>Baseball</a>
+                        </div>
+                    </div>
+
+
+                    <div class="dropdown">
+                        <a href="ValleySportsSeasonal.html" class="nav-item nav-link active dropdown-toggle" id='navbardrop' data-toggle='dropdown' tabindex="-1" onmouseover="style.color='red'" onmouseout="style.color='white'">| Seasonal |</a>
+                        <div class="dropdown-menu color-black">
+                            <a class="dropdown-item" href='ValleySportsSeasonal.html'>Winter</a>
+                            <a class="dropdown-item" href='ValleySportsSeasonal.html'>Spring</a>
+                            <a class="dropdown-item" href='ValleySportsSeasonal.html'>Summer</a>
+                            <a class="dropdown-item" href='ValleySportsSeasonal.html'>Fall</a>
+                        </div>
+                    </div>
+
+
                     <a href="ValleySportsSeasonal.html" class="nav-item nav-link active" tabindex="-1" onmouseover="style.color='red'" onmouseout="style.color='white'">| Contact |</a>
-                    
-                    <a href="ValleySportsSeasonal.html" class="nav-item nav-link active" tabindex="-1" onmouseover="style.color='red'" onmouseout="style.color='white'">| About  |</a>
 
-
-
+                   
 
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
                 </div>
@@ -89,32 +113,34 @@
     </div>
     <!---------------------------------- End the nav-bar ------------->
 
-    
-    
+
+
     <header>
-  
+
         <h3> SABER x NATION SHOP </h3>
-                
-</header>
-    
- <div class="container-fluid">
+
+    </header>
+
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-2">
 
-                <div>
 
-                    <h3> Filter by Age/Gender: </h3>
+                <h3> Filter by : </h3>
+                <div class="dropdown">
+                    <a href="#" class="nav-item nav-link active dropdown-toggle" id='navbardrop' data-toggle='dropdown' tabindex="-1" onmouseover="style.color='red'" onmouseout="style.color='blue'">Age/Gender </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href='#'>MEN</a>
+                        <a class="dropdown-item" href='#'>LADIES</a>
+                        <a class="dropdown-item" href='#'>BOYS</a>
+                        <a class="dropdown-item" href='#'>GIRLS</a>
 
-                    <nav>
-                        <ul>
-                            <li><a href="#">MEN</a></li>
-                            <li><a href="#">WOMEN</a></li>
-                            <li><a href="#">Boys</a></li>
-                            <li><a href="#">Girls  </a></li>
-                            
-                        </ul>
-                    </nav>
+
+
+                    </div>
+
                 </div>
+
 
             </div>
             <div class="col-md-10">
@@ -146,7 +172,7 @@
 
                             <tr>
                                 <th> ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ Men's Full Sleeve Shirt </th>
-                                <th> ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎    </th>
+                                <th> ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </th>
                                 <th> $15 </th>
                             </tr>
 
@@ -354,12 +380,14 @@
                 </div>
             </div>
         </div>
-    </div>
-    <table border="0.0000001">
-   
+    
     
 
-    
+    <table border="0.0000001">
+
+
+
+
 </body>
 
 
