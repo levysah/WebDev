@@ -18,7 +18,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="ValleySportsJS.js">
+    <link rel="stylesheet" href="JS/SampleJS.js">
 
 
 
@@ -101,7 +101,7 @@
 
                     <a href="ValleySportsContact.html" class="nav-item nav-link active" tabindex="-1" onmouseover="style.color='red'" onmouseout="style.color='white'">| Contact |</a>
 
-                    <a href="ValleySportsAbout.html" class="nav-item nav-link active" tabindex="-1" onmouseover="style.color='red'" onmouseout="style.color='white'">| About |</a>
+                    <a href="ValleySportsSeasonal.html" class="nav-item nav-link active" tabindex="-1" onmouseover="style.color='red'" onmouseout="style.color='white'">| About |</a>
 
 
 
@@ -119,67 +119,76 @@
 
 
 
-    <header>
-        <h2> THE VALLEY WELCOMES YOU </h2>
-    </header>
+        <div class='row'>
+            
+            
+            <div class='col-md-6'>
+                <h2 class="text-center my-3"> How's your day been so far? </h2>
 
 
-    <img src="ShakoSaber.jpeg" height=500 width=750>
+                <center>
+                    <p id="textChangeTouch" onmouseover="style.color='red'" onmouseout="style.color='black'" ondblclick="touchSiri()"> I'm here to listen </p>
 
-    <img src='ShakopeeS.jpeg' height=500 width=685>
-
-    <hr>
-
-    <div class="container-fluid">
-
-        <a href="ValleySportsSeasonal.html" class="button button1" role="button" aria-pressed="true"> NEW SEASONAL MERCH SALE</a>
-        <a href="ValleySportsEquipment.html" class="button button1" role="button" aria-pressed="true"> 30% DISCOUNT EQUIPMENT</a>
-        <a href="ValleySportsApparel.html"  class="button button1" role="button" aria-pressed="true"> NEW APPAREL</a>
+                    <button class='button Green' onmouseover="style.color='red'" onmouseout="style.color = 'black'" onclick="changeTextGood()"> it's been good </button>
 
 
-       
-
-    </div>
+                    <button class="button Yellow" onmouseover="style.color='red'" onmouseout="style.color = 'black'" onclick="changeTextFine()"> yeah i'm fine :| </button>
 
 
-
-    <hr>
-
-
-    <div class="container-fluid">
-        <div class="row">
+                    <button class="button Red" onmouseover="style.color='red'" onmouseout="style.color = 'black'" onclick="changeTextOK()"> I'm ok :/ </button>
 
 
+                </center>
+            </div>
+            <div class='col-md-1'>
+            </div>
+            <div class='col-md-5'>
 
-            <img src="SaberSoccer.jpeg" height=300 width=300>
+                <hr>
 
-            <img src="FallSport.jpeg" height=300 width=375>
+                <center>
+                    <h3 class="text-center my-3"> Do you want to discover who your true self is? </h3>
 
-            <img src="ShakoBasketball.jpg" height=300 width=350>
 
-            <img src="SaberBaseball.jpg" height=300 width=400>
+                    <button class='button Legend ' onclick="Legend()" onmouseover="style.color='red'" onmouseout="style.color='black'"> Legend </button>
+
+
+                    <p id='textChangeLegend' onmouseover="style.color='red'" onmouseout="style.color='black'"></p>
 
 
 
+                </center>
+            </div>
+
+            <hr>
+
+            <hr>
+
+
+            <div class="col-md-6 ">
+
+                <center>
+
+                    <hr>
+
+                    <h3 class="text-center my-3"> The true legend test</h3>
+
+
+                    <p id='textChangeLegend' onmouseover="style.color='red'" onmouseout="style.color='black'">If the box glows golden when clicked, you're a legend</p>
+
+
+
+                    <input type="text" id="fname" onblur="allCAPS()" onfocus="glow(this)">
+
+                </center>
+
+
+            </div>
 
 
 
 
 
 
-        </div>
-    </div>
-
-
-</body>
-
-
-
-
-
-
-
-
-
-
-</html>
+            <hr>
+   

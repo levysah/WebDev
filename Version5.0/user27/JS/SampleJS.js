@@ -25,17 +25,9 @@ function reset() {
 
 }
 
-function allCAPS() {
-    var x = document.getElementById("fname");
-    x.value = x.value.toUpperCase();
-
-}
 
 
 function touchSiri() {
     document.getElementById("textChangeTouch").innerHTML = "STOP TOUCHING ME";
 }
 
-function displayDate() {
-    document.getElementById("demo").innerHTML = Date();
-}
