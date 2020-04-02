@@ -1,3 +1,9 @@
+<?php
+// Initialize the session
+session_start();
+ 
+?>
+
 <html lang="en">
 <!--Version 7.0 
 	Name:
@@ -122,10 +128,11 @@
                         </div>
                     </div>
 
-
                 </div>
                 <div class="navbar-nav ml-auto">
-                    <a href="login.php" class="nav-item nav-link active"> Login </a>
+                    <?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+                    echo "<a href='logout.php' class='nav-item nav-link btn-danger' onclick='return confirm(\"Are you sure?\");'> Logout </a>";
+                    } else { echo "<a href='login.php' class='nav-item nav-link'> Login </a>";} ?>
                 </div>
             </div>
         </nav>
@@ -136,7 +143,12 @@
 
 
     <header>
-        <h2> THE VALLEY WELCOMES YOU </h2>
+        <h2> THE VALLEY WELCOMES <?php if(isset($_SESSION["loggedin"]) === false){
+        echo YOU;
+        } 
+            else { echo  htmlspecialchars($_SESSION["username"]); }?>
+             </h2>
+
     </header>
 
 
