@@ -4,6 +4,8 @@
 	Date Completed:
     -->
 
+
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,7 +28,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="ValleySports.css">
-    <link rel='icon' href = "VSimage.png" type = "image" >
+    <link rel='icon' href="VSimage.png" type="image">
 
 
     <!-- Custom styles for this template -->
@@ -123,7 +125,7 @@
 
                 </div>
                 <div class="navbar-nav ml-auto">
-                    <a href="#" class="nav-item nav-link active">Help</a>
+                    <a href="login.php" class="nav-item nav-link active"> Login </a>
                 </div>
             </div>
         </nav>
@@ -180,13 +182,6 @@
 
 
 </body>
-
-
-
-
-
-
-
 
 
 
