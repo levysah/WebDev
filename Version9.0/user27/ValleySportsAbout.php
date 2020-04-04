@@ -1,22 +1,18 @@
-<?php
-// Initialize the session
-session_start();
- 
-?>
-
 <html lang="en">
 <!--Version 7.0 
 	Name:
 	Date Completed:
     -->
 
-
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="SHS WebDev Menu Sample">
+    <link rel="stylesheet" href="ValleySportsJS.js">
+
+
+
 
     <title> Valley Sports - Official Site - Proud Partner and Sponser of the Shakopee Sabers </title>
 
@@ -25,18 +21,21 @@ session_start();
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="ValleySportsJS.js"></script>
 
-    <link rel="stylesheet" href="ValleySportsJS.js">
 
 
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="ValleySports.css">
+
+    <link rel="stylesheet" href="ValleySportsJS.js">
+
+    <link rel="stylesheet" href="ValleySportsJS.js">
     <link rel='icon' href="VSimage.png" type="image">
+
 
 
     <!-- Custom styles for this template -->
@@ -54,6 +53,7 @@ session_start();
             text-align: center;
 
         }
+        
         
         
 .footer-dark {
@@ -223,11 +223,11 @@ session_start();
                         </div>
                     </div>
 
+
+
                 </div>
                 <div class="navbar-nav ml-auto">
-                    <?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-                    echo "<a href='logout.php' class='nav-item nav-link btn-danger' onclick='return confirm(\"Are you sure?\");'> Logout </a>";
-                    } else { echo "<a href='login.php' class='nav-item nav-link'> Login </a>";} ?>
+                    <a href="#" class="nav-item nav-link active">Help</a>
                 </div>
             </div>
         </nav>
@@ -237,57 +237,80 @@ session_start();
 
 
 
-    <header>
-        <h2> THE VALLEY WELCOMES <?php if(isset($_SESSION["loggedin"]) === false){
-        echo YOU;
-        } 
-            else { echo  htmlspecialchars($_SESSION["username"]); }?>
-             </h2>
-
-    </header>
+    <div class='row'>
 
 
-    <img src="ShakoSaber.jpeg" height=350 width=750>
+        <div>
 
-    <img src='ShakopeeS.jpeg' height=350 width=685>
 
-    <hr>
+            <center>
 
-    <div class="container-fluid">
 
-        <a href="ValleySportsSeasonal.php" class="button button1" role="button" onmouseover="style.color = 'white'" aria-pressed="true"> NEW SEASONAL MERCH SALE</a>
-        <a href="ValleySportsEquipment.php" class="button button1" role="button" onmouseover="style.color = 'white'" aria-pressed="true"> 30% DISCOUNT EQUIPMENT</a>
-        <a href="ValleySportsApparel.php" class="button button1" role="button" onmouseover="style.color = 'white'" aria-pressed="true"> NEW APPAREL</a>
+                <img src='Hometown.png' height=600 width=1500>
 
 
 
+            </center>
+        </div>
 
-    </div>
+        <div class='col-md-5'>
+        </div>
+        <div class>
+
+            <hr>
+
+            <center>
+                <h3 class="text-center my-6"> </h3>
+
+
+                <button class='button Mission' onclick="Mission()" onmouseover="style.color='white'" onmouseout="style.color='white'"> Discover Mission </button>
+
+
+                <p id='Mission' onmouseover="style.color='red'" onmouseout="style.color='black'"></p>
 
 
 
-    <hr>
-
-
-    <div class="container-fluid">
-        <div class="row">
+            </center>
+        </div>
 
 
 
-            <img src="SaberSoccer.jpeg" height=300 width=300>
+        <div class>
 
-            <img src="FallSport.jpeg" height=300 width=375>
 
-            <img src="ShakoBasketball.jpg" height=300 width=350>
+            <center>
 
-            <img src="SaberBaseball.jpg" height=300 width=400>
 
+                <img src='History.png' height=600 width=1500>
+
+            </center>
 
 
         </div>
-    </div>
-    
-    <hr> 
+
+
+        <div class='col-md-5'>
+        </div>
+        <div class>
+
+            <hr>
+
+            <center>
+                <h3 class="text-center my-6"> </h3>
+
+
+                <button class='button History' onclick="History()" onmouseover="style.color='white'" onmouseout="style.color='white'"> Explore History </button>
+
+
+                <p id='History' onmouseover="style.color='red'" onmouseout="style.color='black'"></p>
+
+
+
+            </center>
+        </div>
+
+
+<hr> 
     
     
     <div class="footer-dark">
@@ -323,11 +346,9 @@ session_start();
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     
+    </div>
     
+    
+    </body>
 
-
-</body>
-
-
-
-</html>
+        
